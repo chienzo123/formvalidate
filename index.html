@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Monstarlab Frontend Training - HTML, CSS, Bootstrap</title>
+		<link rel="stylesheet" href="./assets/styles/form.css" />
+		<link rel="stylesheet" href="./assets/styles/normalize.css" />
+		<link rel="stylesheet" href="./assets/styles/reponsive.css" />
+		<script src="https://kit.fontawesome.com/3d4065abd3.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	</head>
+	<body>
+			<div class="form ">
+			<div class="form__heading">
+				<p>Sign up login</p>
+			</div>
+			<div class="input-item flex-column">
+				<div class="container">
+				<label class="input-item__heading" >Name</label>
+				<div class="input-item__input " >
+					<span class="input-item__input-icon"><i class="fas fa-user"></i></span>
+					<input class="input-item__input-input" id="nameInput" type="text">
+				</div>
+				<p class="input-item__error" ></p>
+				<p class="input-item__rule" >Tên gồm chữ hoa và chữ thường</p>
+				
+			</div>
+			</div>
+			<div class="input-item flex-column">
+				<div class="container">
+				<label class="input-item__heading" >Email</label>
+				<div class="input-item__input" >
+					<span class="input-item__input-icon"><i class="fas fa-envelope-open"></i></span>
+					<input class="input-item__input-input" id="emailInput"  type="text">
+				</div>
+				<p class="input-item__error" ></p>
+				<p class="input-item__rule" >Email có dạng abc@abc.com</p>
+			</div>
+			</div>
+			<div class="input-item flex-column">
+				<div class="container">
+				<label class="input-item__heading" >Password</label>
+				<div class="input-item__input" >
+					<span class="input-item__input-icon"><i class="fas fa-key"></i></span>
+					<input class="input-item__input-input" id="passInput" type="password">
+				</div>
+				<p class="input-item__error" ></p>
+				<p class="input-item__rule" >Mật khẩu phải bao gồm ít nhất 1 chữ hoa, 1 chữ thường, 1 số và 1 kí tự đặc biệt, tối thiểu 8 kí tự</p>
+			</div>
+			</div>
+			<div class="input-item flex-column">
+				<div class="container">
+				<label class="input-item__heading">Comfirm password</label>
+				<div class="input-item__input" >
+					<span class="input-item__input-icon"><i class="fas fa-key"></i></span>
+					<input class="input-item__input-input" id="comfirmInput" type="password" >
+				</div>
+				<p class="input-item__error" ></p>
+				<p class="input-item__rule" >Nhập chính xác theo ô password</p>
+			</div>
+			</div>
+			<div class="input-item flex-column">
+				<div class="container">
+				<label class="input-item__heading">Address</label>
+				<div class="input-item__input" >
+					<span class="input-item__input-icon"><i class="fas fa-home"></i></span>
+					<input class="input-item__input-input" id="addresss" type="text" >
+				</div>
+				<p class="input-item__error" ></p>
+				<p class="input-item__rule" >Nhập địa chỉ</p>
+			</div>
+			</div>
+			<div class="form__btn">
+				 <button class="form__btn-item" id="disableBtn" disabled>Submid</button> 
+				 <button class="form__btn-item form__btn--load" id="loadingBtn">Loading <i class="fas fa-spinner"></i></button> 
+			</div>
+			</div>
+			<label class="overlay" id="modal" for="nav-show" name="closeResult">
+				<div class="modal-result">
+				<div class="modal-result__close">
+					<label for="nav-show" name="closeResult" ><i class="fas fa-times modal-result__close-icon"></i></label>
+				</div>
+				<div class="modal-result__content">
+					<div class="container">
+						<h3>Bạn đã đăng ký thành công với: </h3>
+					<div class="result-item">
+						<label class="col-2 result-item__lable"> Name </label>
+						<p class="col-10 result-item__text" id="nameResult"></p>
+					</div>
+					<div class="result-item">
+						<label class="col-2 result-item__lable"> Email </label>
+						<p class="col-10 result-item__text" id="emailResult"></p>
+					</div>
+					<div class="result-item">
+						<label class="col-2 result-item__lable"> Password </label>
+						<p class="col-10 result-item__text" id="passResult"></p>
+					</div>
+					</div>
+					
+					</div>
+					<div class="modal-result__btn">	
+						<button class="modal-result__btn-item" name="closeResult">
+							OK
+						</button>
+					</div>
+				</label>
+				
+				
+			
+			<script src="./assets/scripts/main.js"></script>
+	</body>
+</html>
